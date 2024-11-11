@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detaylı Günlük Plan</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Günlük Plan</h1>
+      <div id="timeDisplay"></div>
+
+      <div id="taskInputSection">
+        <input type="text" id="taskInput" placeholder="Yeni görev ekleyin..." />
+        <input type="time" id="taskTime" placeholder="Saat seçin" />
+        <textarea id="taskDetail" placeholder="Detay ekleyin..."></textarea>
+        <button onclick="addTask()">Görev Ekle</button>
+      </div>
+
+      <ul id="taskList"></ul>
+
+      <button id="resetBtn" onclick="resetTasks()">Günü Sıfırla</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
